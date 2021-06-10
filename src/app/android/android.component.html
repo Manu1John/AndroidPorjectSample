@@ -1,0 +1,181 @@
+<mat-tab-group mat-align-tabs="end">
+    <mat-tab label="First">
+        <h1>GROWTH SIDE</h1>
+        <br>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Startup</mat-card-title>
+                            <mat-card-subtitle>Unique platforms</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image
+                            src="https://th.bing.com/th/id/OIP.duDeaFLKAr6LQ8Aekx0d0QHaEY?pid=ImgDet&rs=1">
+                        <mat-card-content>
+                            <p>
+                                When starting your business venture a business plan is a vital tool to have on hand. It
+                                helps in maintaining focus throughout their journey and keeps the company’s short-term
+                                and long-term goals in hindsight.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button class="btn btn-outline-danger" mat-button>LIKE</button>
+                            <button class="btn btn-success" mat-button>SHARE</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col-md">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>MLM</mat-card-title>
+                            <mat-card-subtitle>Direct selling</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image
+                            src="https://www.investopedia.com/thmb/JTt6GoeO2WKy2u4Tnop7ehnmwUs=/5200x3280/filters:fill(auto,1)/multilevel-marketing-mlm--648692102-6470ed4570ca4c8d8ef137a93f9b35d1.jpg">
+                        <mat-card-content>
+                            <p>
+                                Multilevel marketing is a legitimate business strategy, though it is controversial. One
+                                problem is pyramid schemes that use money from new recruits to pay people at the top
+                                rather than those who perform the work.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button class="btn btn-outline-danger" mat-button>LIKE</button>
+                            <button class="btn btn-success" mat-button>SHARE</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col-md">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Wellness</mat-card-title>
+                            <mat-card-subtitle>health & Kind</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image
+                            src="https://th.bing.com/th/id/R3e62327f32e35d4a7bdab5a0893a2557?rik=e7JaWyagZTLslA&riu=http%3a%2f%2fntsd.org%2fwp-content%2fuploads%2f2017%2f04%2fWellness.jpg&ehk=J%2bkx9uzsHCVClWWxqJYzw88C0AqS3a3HDquOp6cN9lE%3d&risl=&pid=ImgRaw">
+                        <mat-card-content>
+                            <p>
+                                Most people try their best to make improvements in their life that will be beneficial to
+                                their wellbeing and quality of life. The idea of wellness covers far more than physical
+                                health, as it recognises how multiple areas of your life can impact your wellbeing.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button class="btn btn-outline-danger" mat-button>LIKE</button>
+                            <button class="btn btn-success" mat-button>SHARE</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Second">
+        <h1>SUCESS FULL PEOPLES</h1>
+        <br>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                    <!--- Note that these columns can be defined in any order.
+                              The actual rendered columns are set as a property on the row definition" -->
+
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="position">
+                        <th mat-header-cell *matHeaderCellDef> No. </th>
+                        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                    </ng-container>
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef> Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="weight">
+                        <th mat-header-cell *matHeaderCellDef> Organization </th>
+                        <td mat-cell *matCellDef="let element"> {{element.organization}} </td>
+                    </ng-container>
+
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="symbol">
+                        <th mat-header-cell *matHeaderCellDef> Age </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Age}} </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+
+
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Third">
+        <h1>DETAILS</h1>
+        <br><br><br>
+        <!-- News jumbotron -->
+        <div class="container">
+            <div class="box-element">
+                <div class="jumbotron text-center hoverable p-4">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 offset-md-1 mx-3 my-3">
+
+                            <!-- Featured image -->
+                            <div class="view overlay waves-light" mdbWavesEffect>
+                                <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid"
+                                    alt="Sample image for first version of blog listing">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-7 text-md-left ml-3 mt-3">
+
+                            <!-- Excerpt -->
+                            <a href="#!" class="green-text">
+                                <h6 class="h6 pb-1">
+
+                                </h6>
+                            </a>
+
+                            <h4 class="h4 mb-4"><h2>The Importance of Technology in Modern Marketing</h2></h4>
+
+                            <p class="font-weight-normal">Technology strategic plans often prioritize the wrong areas
+                                for improvement, too many activities at once, or fail to explain why one improvement is
+                                more important than another. Ineffective prioritization ends up wasting money and
+                                opportunities.
+
+                                Technology evolves rapidly, and can change characteristics of society from national
+                                security to our daily lives. The Strategic Role of Technologies aims to understand how
+                                technology and innovation is transforming the world we live in.</p>
+                            <p class="font-weight-normal">by <a><strong>Elon Mask</strong></a>, 19/08/2016</p>
+
+                            <div class="btn btn-outline-secondary">Read More</div>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- News jumbotron -->
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>
